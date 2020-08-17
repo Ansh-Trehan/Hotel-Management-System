@@ -1,0 +1,79 @@
+body {
+    margin:0;
+    overflow: hidden;
+}
+.login-window{
+    
+}
+.home {
+    color:white;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 15px;
+    position: absolute;
+    left:1%;
+    top:2%;
+}
+.loginNext {
+    display:none;
+}
+.login-container {
+    position: relative;
+    width:100%;
+    height:100%;
+     background-color: rgba(0,0,0,0.6);
+}
+.box {
+    position: absolute;
+    top:20%;
+    left:35%;
+    background-color: #fff;
+    border-radius: 5px;
+    width:400px;
+    height:360px;
+    padding:10px;
+    box-shadow: 2px 2px 8px 0px #ccc;
+    
+}
+
+.login-window .header img {
+    width:100px;
+    margin-left:0px;
+}
+.login-window input {
+    height:35px;
+    width:100%;
+}
+form #email {
+    color:grey;
+    font-family: sans-serif;
+    font-size: 17px;
+    padding-left:10px;
+}
+.loginWindow #create {
+    padding:0;
+    background-color: transparent;
+    border-style: none;
+}
+.loginNext {
+    position: relative;
+}
+.loginNext .header img {
+    margin-left:0	px;
+    width:100px;
+}
+.email-view {
+    position:relative;
+    background-color:#d4d7db;
+    height:30px;
+    width:100%;
+}
+.loginNext .email-view img {
+    position: absolute;
+    bottom:0;
+    height:50px;
+}
+.loginNext input[type=password] {
+    height:35px;
+    width:100%;
+}

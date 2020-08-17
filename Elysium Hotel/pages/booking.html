@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<title>Hotel Elysium | BOOKING</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+	<link href="../css/style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body background="../images/background.jpg">
+<header id="header">
+  <div class="container">
+    <div class="row">
+       <div class="col-md-12">
+          <a href="index.html" title="Hotel Elysium" class="logo">
+           <img src="../images/logo.png" width="80px" height="80px" alt="Hotel Elysium" title="Hotel Elysium">
+          </a>
+		  <span class= "heading" style="font-size:45px;">Hotel Elysium</span>
+        </div>
+       <div class="col-md-12">
+         	<span class="contact pull-right" style="background-color:darkslategrey;">
+            	<a href="mailto:info@elysium.com">Email: info@elysium.com</a> &nbsp;
+             	<a href="tel:+916644458242">Call: +91 664 445 8242</a>
+        	</span>
+       </div>
+    </div>
+ </div>
+</header>
+  <nav id="nav">
+    <div class="container">
+      <div class="row">
+          <div class="col-md-24">
+              <ul>
+                <li><a href="index.html" title="Home">HOME</a></li>
+                <li><a href="about-us.html" title="About-Us">ABOUT US</a></li>
+                <li><a href="rooms-tariff.html" title="Rooms & Tariff">ROOMS & TARIFF</a></li>
+                <li><a href="photogallery.html" title="Photogallery">PHOTOGALLERY</a></li>
+				  <li><a href="restaurant.html" title="Restaurant">RESTAURANT</a></li>
+                <li><a href="spa.html" title="spa">SPA & HEALTH CLUB</a></li>
+				<li><a href="sales.html"title="Sales">SALES & CATERING</a></li>
+                <li><a href="contact-us.html" title="Contact-Us">CONTACT US</a></li>
+				  <li><a href="agent.html"title="Agent">TRAVEL AGENT</a></li>
+				<li><a href="login.html" title="Login">LOGIN</a></li>
+				<li class="active"><a href="booking.html"title="Book">BOOK</a></li>
+              </ul>
+          </div>
+        </div>
+      </div>    
+  </nav>
+<div class="container">
+	<div class="wel-wrapper align">
+		<div class="row">
+    		<div class="col-md-24">
+        		<h1 class="heading">Booking</h1>
+            	<div class="row">
+        			<div class="col-md-14">
+                     <div class="book">
+						<form id="book-form" action="payment.html" onsubmit="bill()">
+
+                        <div class="form-group">
+
+                          <label>Name</label>
+
+                          <input type="text" class="form-control" placeholder="Enter Name" name="name" required>
+
+                        </div>
+
+                        <div class="form-group">
+
+                          <label>Email</label>
+
+                          <input type="email" class="form-control" placeholder="Enter Email" name="email" required>
+
+                        </div>
+
+                           <div class="form-group">
+
+                          <label>Mobile No.</label>
+
+                          <input type="number" class="form-control" placeholder="+91" name="mobile" max="9999999999" min="1111111111" required>
+
+                        </div>
+
+                         <div class="form-group">
+
+                          <label>Check-in</label>
+						  
+						  <input type="datetime-local" id="cin" class="form-control" name="checkin" min="2018-04-03T05:30" max="2021-04-30T16:30" required>
+
+                            </div>
+
+                         <div class="form-group">
+
+                          <label>Check-out</label>
+						  
+						  <input type="datetime-local" id="cout" class="form-control" name="checkout" min="2018-04-03T08:30" max="2021-04-30T16:30" required>
+
+                        </div>
+						
+						<div class="form-group">
+						
+						<label>Suite</label>
+						
+						<select class="form-control" id="suite" name="suite">
+						<option value="deluxe">Deluxe</option>
+						<option value="superior">Superior</option>
+						<option value="executive">Executive</option>
+						<option value="pacific">Pacific</option>
+						<option value="presidential">Presidential</option>
+						</select>
+						
+						</div>
+						
+						<div class="form-group">
+
+                          <label>Dining</label>
+						  <br/>
+						      <label class="radio-inline"><input type="radio" value="EP" name="dining" checked>European Policy</label>
+						      <label class="radio-inline"><input type="radio" value="CP" name="dining">Continental Policy</label>
+                            <label class="radio-inline"><input type="radio" value="AP" name="dining">American Policy</label>
+                        </div>
+                         <div class="form-group">
+
+                          <label>Tour Packages</label>
+						  <br/>
+						  <select name="tour" size="4" multiple>
+                            <option value="sight">Sight Seeing Package</option>
+                            <option value="adventure">Adventure Package</option>
+                            <option value="religious">Religious Package</option>
+                            <option value="heritage">Heritage Package</option>
+                          </select>
+                            <p class="text">Hold down the Ctrl (windows) / Command (Mac) button to select multiple options.</p>
+                        </div>
+						<div class="form-group">
+
+                          <label>Any Special Requirements:</label>
+						  <textarea class="form-control" rows="5" id="requirments"></textarea>
+
+                        </div>
+                         <input type="submit" name="button" value="Pay" class="btn btn-default submit-btn">
+                  </form>
+                </div>
+        		</div>
+     		</div>
+  		</div>
+ 	   		
+   </div>
+</div>
+<footer id="footer">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-24"  style="background-color:darkslategrey;">
+             <a href="index.html" title="Home">HOME</a>
+             <a href="about-us.html" title="About-Us">ABOUT US</a>
+             <a href="rooms-tariff.html" title="Rooms & Tarriff">ROOMS & TARIFF</a>
+             <a href="photogallery.html" title="Photogallery">PHOTOGALLERY</a>
+			 <a href="restaurant.html" title="Restaurant">RESTAURANT</a>
+             <a href="spa.html" title="spa">SPA & HEALTH CLUB</a>
+			 <a href="sales.html"title="Sales">SALES & CATERING</a>
+			 <a href="agent.html"title="Agent">TRAVEL AGENT</a>
+             <a href="contact-us.html" title="Contact-Us">CONTACT US</a>
+			 <a href="login.html" title="Login">LOGIN</a>
+			 <a href="booking.html"title="Book">BOOK</a>
+          </div>
+       </div>
+  </div>  
+</footer>
+      </div>
+<footer id="footer">
+<div class="copy-right">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-12">
+              Ansh Trehan, Jayant Ubha, Rahul Hussain, Kashish Ahuja
+          </div>
+         <div class="col-md-12">
+              <span class="pull-right">Website designed by: &copyK17KQ</span>
+         </div>
+      </div>
+	  </div>
+</div>
+</footer>
+      <script src="../js/bill.js"> </script>
+      <script src="../js/jquery.min.js"> </script>
+      <script src="../js/moment.js"> </script>
+  </body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Hotel Elysium | Call Accounting</title>
+<link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body background="../images/background.jpg">
+<header id="header">
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<a href="index.html" title="Hotel Elysium Dalhousie" class="logo">
+<img src="../images/logo.png" width="80px" height="80px" alt="Hotel Elysium" title="Hotel Elysium">
+</a>
+<span class= "heading" style="font-size:45px;">Hotel Elysium</span>
+</div>
+<div class="col-md-12">
+<span class="contact pull-right" style="background-color:darkslategrey;">
+            	<a href="mailto:info@elysium.com">Email: info@elysium.com</a> &nbsp;
+             	<a href="tel:+916644458242">Call: +91 664 445 8242</a>
+                
+        	</span>
+    </div>
+ </div>
+</header>
+<nav id="nav">
+      <div class="container">
+    	<div class="row">
+       		<div class="col-md-24">
+     			<ul>
+                  <li><a href="index.html" title="Home">HOME</a></li>
+                  <li><a href="internet.html" title="Internet">INTERNET USAGE & BILLING</a></li>
+                  <li class="active"><a href="call.html" title="Call">CALL ACCOUNTING</a></li>
+                  <li><a href="payment.html" title="Pay">PAY</a></li>
+       			</ul>
+       		</div>
+          </div>
+        </div>    
+    </nav>
+	<div class="container">
+ 	<div class="wel-wrapper align">
+    	<div class="row">
+    		<div class="col-md-24">
+        		<h1 class="heading">Call Accounting</h1>
+           		<div class="row">
+            		<div class="col-md-18">
+                	<p>
+						You get first 60min free through Hotel's Calling Facility. After that you will be charged Rs. 0.5 per 1Min
+					</p>
+					<div class="col-md-14">
+                     <div class="call-bill"></div>
+            	   <form id="call-form" onsubmit="call()" action="payment.html">
+						<div class="form-group">
+
+                          <label>Talked Time</label>
+
+                          <input type="number" id="min" class="form-control" placeholder="Talk Time in Minutes" name="min" required>
+
+                        </div>
+
+						<div class="form-group">
+
+                          <label>Room Number</label>
+
+                          <input type="number" class="form-control" placeholder="Enter your Room Number" name="room" minlength="3" required>
+
+                        </div>
+                        <button type="submit" class="btn btn-default submit-btn">Submit</button>
+
+                  </form>
+				  <p id="bill"></p>
+            </div>
+                </div>
+            </div>
+        		
+   		</div>
+          
+    </div>
+  </div>
+</div>
+<footer id="footer">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-24"  style="background-color:darkslategrey;">
+				<a href="index.html" title="Home">HOME</a>
+                <a href="internet.html" title="Internet">INTERNET USAGE & BILLING</a>
+                <a href="call.html" title="Call">CALL ACCOUNTING</a>
+                <a href="payment.html" title="Pay">PAY</a>
+          </div>
+       </div>
+  </div>        
+</footer>
+<footer id="footer">
+<div class="copy-right">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-12">
+              Ansh Trehan, Jayant Ubha, Rahul Hussain, Kashish Ahuja
+          </div>
+         <div class="col-md-12">
+              <span class="pull-right">Website designed by: &copyK17KQ</span>
+         </div>
+      </div>
+    </div>
+</div>
+</footer>
+<script src="../js/call.js"></script>
+  </body>
+</html>

@@ -1,0 +1,291 @@
+
+@font-face {
+font-family: "ERINAL";
+src: url("fonts/ERINW.ttf");
+font-weight: normal;
+font-style: normal;
+}
+
+body{
+margin:0;
+padding:0;
+font-family: 'robotoregular';
+font-size:14px;
+background-image: url(../images/background.jpg);
+background-size: cover;
+width: 100%;
+height: 100%;
+}
+
+ul{
+margin:0;
+padding:0;
+}
+
+img{
+max-width:100%;
+}
+
+#header{
+padding:8px 0;
+position:relative;
+}
+
+.contact a{
+font-size:16px;
+color:#fff;
+}
+
+.contact a:hover{
+text-decoration:none;
+}
+
+.contact{
+margin-top:18px;
+}
+
+#banner{
+position:relative;
+margin-bottom:30px;
+}
+
+#banner .bx-wrapper .bx-prev{
+background:url(../images/controls.png) no-repeat;
+height:44px;
+width:44px;
+left:-5px;
+}
+
+#banner .bx-wrapper .bx-next{
+background:url(../images/controls.png) no-repeat -52px 0;
+height:44px;
+width:44px;
+right:-4px;
+}
+
+#banner .bx-wrapper .bx-viewport{
+border:0;
+}
+
+#nav{
+  background:darkslategrey;
+  margin-bottom: 15px;
+  border-top: 4px solid #fff;
+  margin-top: -8px;
+  position: relative;
+}
+
+#nav ul li{
+float:left;
+list-style:none;
+}
+
+#nav ul li a{
+display:inline-block;
+color:#fff;
+font-size:14px;
+font-weight:bold;
+padding: 12px 19px 12px 22px;
+}
+
+#nav ul li a:hover,#nav ul li.active a{
+text-decoration:none;
+  color: darkslategrey;
+  background: white;
+}
+
+#main-section{
+margin:25px 0;
+opacity: 0.9;
+padding:30px 0;
+}
+
+.box{
+text-align:center;
+}
+
+.box .img-circle {
+display: inline-block;
+border-radius: 100%;
+width: 225px;
+height: 225px;
+border:5px solid #fff;
+}
+
+.box h2{
+margin:0;
+color:#fff;
+font-size:24px;
+font-weight:bold;
+padding:10px 0;
+}
+.box .text{
+color:#fff;
+margin:0;
+font-weight:lighter;
+}
+/*main-section end here*/
+/*welcome-section start here*/
+.wel-wrapper{
+background-color: rgba(255, 255, 255, 0.7);
+padding:20px 15px;
+text-align:center;
+}
+.heading{
+margin:0;
+color:darkslategray;
+font-size:36px;
+font-family:ERINAL;
+font-weight:bold;
+padding-bottom:10px;
+text-decoration: underline;
+}
+.wel-wrapper .wel-art{
+display:block;
+padding-bottom:6px;
+}
+/*welcome-section end here*/
+/*footer start here*/
+#footer{
+padding:6px 0;
+margin-top:30px;
+}
+#footer a{
+display:inline-block;
+color:#fff;
+font-size:12px;
+padding:10px;
+}
+.copy-right{
+background:#000;
+font-size:12px;
+color:#777474;
+padding:6px 0;
+}
+.copy-right a{
+color:#fff;
+}
+/*footer start here*/
+/*about page start here*/
+.align{
+text-align:left;
+}
+.text{
+margin:0;
+line-height:24px;
+}
+/*about page end here*/
+/*photo-gallery page start here*/
+.img-holder img{
+border:5px solid #A6A3A3;
+margin:15px 0 10px 0;
+}
+#photo-gallery .img-holder i{
+background:url(../images/search.png) no-repeat;
+display: none;
+width:30px;
+height: 30px;
+position: absolute;
+left: 45%;
+top: 55%;
+cursor: pointer;
+}
+#photo-gallery .img-holder:hover i{
+display:block;
+}
+/*photo-gallery page end here*/
+/*contact page start here*/
+#contact-form textarea{
+display:inline-block;
+width:100%;
+height:100px;
+border: 1px solid #ccc;
+}
+.submit-btn{
+background:darkslategrey;
+border:0;
+border-rtadius:6px;
+font-size:14px;
+color:#fff;
+font-weight:bold;
+}
+.submit-btn:hover{
+background:white;
+color:darkslategrey;
+}
+/*contact page end here*/
+/*room tariff page start here*/
+.room-tariff .img-holder{
+position:relative;
+}
+.caption{
+background-color: rgba(0, 0, 0, 0.7);
+display:inline-block;
+color:#fff;
+position:absolute;
+left: 6px;
+bottom: 14px;
+width:444px;
+padding:8px 10px;
+}
+.room-detail{
+background-color: rgba(0, 0, 0, 0.7);
+position:absolute;
+left:5px;
+top:19px;
+overflow: hidden;
+height:auto;
+color: #fff;
+width:445px;
+padding:15px;
+display:none;
+}
+.room-detail h2{
+font-size:16px;
+font-weight:bold;
+margin:0;
+padding-bottom:10px;
+}
+.room-detail  ul li{
+margin-left:15px;
+}
+.room-tariff .img-holder:hover .room-detail{
+display:block;
+}
+.tab-content{
+width:100%;
+border:1px solid #A6A3A3;
+margin:20px 0 0 0;
+color:#222;
+}
+.tab-content tr{
+border-bottom:1px solid #A6A3A3;
+}
+.tab-content tr th{
+border-right:1px solid #A6A3A3;
+padding:5px 12px;
+}
+.tab-content tr td{
+border-right:1px solid #A6A3A3;
+padding:5px 12px;
+}
+.package h3{
+font-size:16px;
+font-weight:bold;
+margin:0;
+padding-bottom:10px;
+}
+.package{
+margin:15px 0 0 0
+}
+.package  ul li{
+margin-left:15px;
+margin-bottom:5px;
+}
+.note li{
+list-style:none;
+margin-left:0px !important;
+}
+/*room tariff page end here*/
+input.error{border:1px solid #FF0000;}
+.error{color:#FF0000; font-weight:normal;}
